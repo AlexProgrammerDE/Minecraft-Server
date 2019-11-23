@@ -252,7 +252,7 @@ CHOICE=$(dialog --clear \
 case $CHOICE in
         1)
             echo "You chose Option 1"
-            sudo bash pocketmine-server.sh latest
+            bash pocketmine-server.sh latest
             ;;
 esac
 fi
