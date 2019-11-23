@@ -1,7 +1,7 @@
 # Minecraft-Server
 
 This is a Minecraft-Server installer.
-It can install multiple server in the future.
+It can install minecraft multiple server in the future.
 
 ## To-Do
 
