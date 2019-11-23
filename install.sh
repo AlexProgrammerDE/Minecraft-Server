@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt install -y dialog wget
 
-HEIGHT=10
+HEIGHT=11
 WIDTH=40
 CHOICE_HEIGHT=3
 BACKTITLE="Minecraft-Server"
