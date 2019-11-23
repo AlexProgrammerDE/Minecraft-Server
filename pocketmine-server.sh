@@ -11,3 +11,5 @@ cd serverfiles
 if [[ $1 == latest ]]; then
 wget -q -O - https://get.pmmp.io | bash -s -
 fi
+
+./start.sh
