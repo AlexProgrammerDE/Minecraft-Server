@@ -11,7 +11,8 @@ TITLE="Server Version"
 MENU="Choose one of the Minecraft Editions:"
 
 OPTIONS=(1 "Minecraft Java Edition"
-         2 "Minecraft Bedrock Edition")
+         2 "Minecraft Bedrock Edition"
+         3 "Minecraft Pocket Edition"))
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -30,6 +31,10 @@ case $CHOICE in
         2)
             echo "You chose Option 2"
             export MINECRAFTEDITION=2
+            ;;
+        3)
+            echo "You chose Option 3"
+            export MINECRAFTEDITION=3
             ;;
 esac
 
@@ -230,6 +235,24 @@ case $CHOICE in
         1)
             echo "You chose Option 1"
             sudo bash bedrock-server.sh 1.13.3.0
+            ;;
+esac
+fi
+
+if [[ "$MINECRAFTEDITION" == 3 ]]; then
+MENU="Choose one of the Minecraft Versions:"
+OPTIONS=(1 "latest")
+CHOICE=$(dialog --clear \
+                --backtitle "$BACKTITLE" \
+                --title "$TITLE" \
+                --menu "$MENU" \
+                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                "${OPTIONS[@]}" \
+                2>&1 >/dev/tty)
+case $CHOICE in
+        1)
+            echo "You chose Option 1"
+            sudo bash pocketmine-server.sh latest
             ;;
 esac
 fi
