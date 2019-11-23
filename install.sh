@@ -12,7 +12,7 @@ MENU="Choose one of the Minecraft Editions:"
 
 OPTIONS=(1 "Minecraft Java Edition"
          2 "Minecraft Bedrock Edition"
-         3 "Minecraft Pocket Edition"))
+         3 "Minecraft Pocket Edition")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
