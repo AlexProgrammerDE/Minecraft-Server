@@ -23,7 +23,7 @@ CHOICE=$(dialog --clear \
                 2>&1 >/dev/tty)
 case $CHOICE in
         1)
-            sudo rm -r *
+            sudo rm -rf `ls -Ab`
             ;;
         2)
             break
