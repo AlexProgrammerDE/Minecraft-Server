@@ -803,4 +803,4 @@ case $CHOICE in
             ;;
 esac
 
-java -Xmx1024M -Xms1024M -jar server.jar nogui 
+sudo java -Xmx1024M -Xms1024M -jar server.jar nogui 
