@@ -21,7 +21,7 @@ CHOICE=$(dialog --clear \
                 
 case $CHOICE in
         1)
-            if [[ $1 == latest ]]; then
+            if [[ $1 == 1.13.3.0 ]]; then
                wget -O bedrock-server.zip https://minecraft.azureedge.net/bin-linux/bedrock-server-1.13.3.0.zip
                unzip bedrock-server.zip
                cd bedrock-server
