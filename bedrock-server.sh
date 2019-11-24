@@ -2,7 +2,7 @@
 
 HEIGHT=20
 WIDTH=40
-CHOICE_HEIGHT=4
+CHOICE_HEIGHT=2
 BACKTITLE="Minecraft-Server"
 
 TITLE="Agreement"
