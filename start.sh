@@ -4,6 +4,8 @@ HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server"
+
+if [[ ! -d serverfiles ]]; then
 TITLE="Server Version"
 MENU="Choose one of the Minecraft Editions:"
 
@@ -409,4 +411,5 @@ case $CHOICE in
             sudo bash spigot-server.sh -v 1.7.9
             ;;
 esac
+fi
 fi
