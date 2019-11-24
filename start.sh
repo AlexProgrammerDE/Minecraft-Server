@@ -1,5 +1,6 @@
 #!/bin/bash
 
+function mc-server() {
 sudo apt update
 sudo apt install -y dialog wget
 
@@ -413,3 +414,4 @@ case $CHOICE in
             ;;
 esac
 fi
+}
