@@ -30,7 +30,16 @@ case $CHOICE in
 esac
 fi
 
-            if [[ $1 == 1.14.4 ]]; then
+while getopts ":v:" opt; do
+  case $opt in
+    v) arg1="$OPTARG"
+    ;;
+    \?) echo "Invalid option -$OPTARG" >&2
+    ;;
+  esac
+done
+
+            if [[ $arg1 == 1.14.4 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.14.4.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -52,7 +61,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.14.3 ]]; then
+            if [[ $arg1 == 1.14.3 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.14.3.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -74,7 +83,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.14.2 ]]; then
+            if [[ $arg1 == 1.14.2 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.14.2.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -96,7 +105,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.14.1 ]]; then
+            if [[ $arg1 == 1.14.1 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.14.1.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -118,7 +127,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.14 ]]; then
+            if [[ $arg1 == 1.14 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.14.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -140,7 +149,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.13.2 ]]; then
+            if [[ $arg1 == 1.13.2 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -162,7 +171,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.13.1 ]]; then
+            if [[ $arg1 == 1.13.1 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.13.1.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -184,7 +193,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.13 ]]; then
+            if [[ $arg1 == 1.13 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.13.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -206,7 +215,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.12.2 ]]; then
+            if [[ $arg1 == 1.12.2 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -228,7 +237,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.12.1 ]]; then
+            if [[ $arg1 == 1.12.1 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.12.1.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -250,7 +259,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.12 ]]; then
+            if [[ $arg1 == 1.12 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.12.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -272,7 +281,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.11.2 ]]; then
+            if [[ $arg1 == 1.11.2 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -294,7 +303,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.11.1 ]]; then
+            if [[ $arg1 == 1.11.1 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.11.1.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -316,7 +325,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.11 ]]; then
+            if [[ $arg1 == 1.11 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.11.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -338,7 +347,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.10.2 ]]; then
+            if [[ $arg1 == 1.10.2 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.10.2-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -360,7 +369,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.10 ]]; then
+            if [[ $arg1 == 1.10 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.10-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -382,7 +391,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.9.4 ]]; then
+            if [[ $arg1 == 1.9.4 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.9.4-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -404,7 +413,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.9.2 ]]; then
+            if [[ $arg1 == 1.9.2 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.9.2-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -426,7 +435,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.9 ]]; then
+            if [[ $arg1 == 1.9 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.9-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -448,7 +457,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.8.8 ]]; then
+            if [[ $arg1 == 1.8.8 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -470,7 +479,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.8.7 ]]; then
+            if [[ $arg1 == 1.8.7 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.8.7-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -492,7 +501,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.8.6 ]]; then
+            if [[ $arg1 == 1.8.6 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.8.6-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -514,7 +523,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.8.5 ]]; then
+            if [[ $arg1 == 1.8.5 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.8.5-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -536,7 +545,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.8.4 ]]; then
+            if [[ $arg1 == 1.8.4 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.8.4-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -558,7 +567,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.8.3 ]]; then
+            if [[ $arg1 == 1.8.3 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.8.3-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -580,7 +589,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.8 ]]; then
+            if [[ $arg1 == 1.8 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.8-R0.1-SNAPSHOT-latest.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -602,7 +611,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.7.10 ]]; then
+            if [[ $arg1 == 1.7.10 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.7.10-SNAPSHOT-b1657.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
@@ -624,7 +633,7 @@ fi
                           ;;
               esac
             fi
-            if [[ $1 == 1.7.9 ]]; then
+            if [[ $arg1 == 1.7.9 ]]; then
               wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.7.9-R0.2-SNAPSHOT.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
               sleep 10
