@@ -1,8 +1,6 @@
 #!/bin/bash
 
 function mc-server() {
-sudo apt update
-sudo apt install -y dialog wget
 
 HEIGHT=12
 WIDTH=40
