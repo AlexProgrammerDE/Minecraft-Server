@@ -21,7 +21,7 @@ jobs:
         git config --local user.email "$github_email"
         git config --local user.name "AlexProgrammerDE"
         git add .
-        git commit -m "Sync files" -a --allow-empty 
+        git commit -m "Sync files [Bot]" -a --allow-empty 
       env:
         github_email: ${{ secrets.GITHUB_EMAIL }}
     - name: Push changes
