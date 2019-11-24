@@ -5,7 +5,63 @@ WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server"
 
-if [[ ! -d serverfiles ]]; then
+if [[ -d serverfiles ]]; then
+  TITLE="Server detected."
+  MENU="Do you want to edit the server?"
+  OPTIONS=(1 "Manage the server."
+           2 "Create a new server.")
+  CHOICE=$(dialog --clear \
+                  --backtitle "$BACKTITLE" \
+                  --title "$TITLE" \
+                  --menu "$MENU" \
+                  $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                  "${OPTIONS[@]}" \
+                  2>&1 >/dev/tty)
+                  
+  case $CHOICE in
+        1)
+            echo "You chose Option 1"
+            export SERVER_INSTALL_DISABLE=1
+            TITLE="Editing."
+            MENU="What do you want to do?"
+            OPTIONS=(1 "Run shell in the serverfiles directory."
+                     2 "Quit")
+            while [ ! $END == 1 ]
+            CHOICE=$(dialog --clear \
+                            --backtitle "$BACKTITLE" \
+                            --title "$TITLE" \
+                            --menu "$MENU" \
+                            $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                            "${OPTIONS[@]}" \
+                            2>&1 >/dev/tty)
+            case $CHOICE in
+            1)
+                echo "You chose Option 1"
+                clear
+                DIRECTORY=$(pwd)
+                cd serverfiles
+                read -p "Type here your command" COMMAND
+                $COMMAND
+                cd $DIRECTORY
+                ;;
+            2)
+                echo "You chose Option 2"
+                export END=1
+                ;;
+            done
+            ;;
+        2)
+            echo "You chose Option 2"
+            export 
+            break
+            ;;
+  esac
+fi 
+
+clear 
+
+if [[ ! SERVER_INSTALL_DISABLE == 1 ]]; then
+
 TITLE="Server Version"
 MENU="Choose one of the Minecraft Editions:"
 
