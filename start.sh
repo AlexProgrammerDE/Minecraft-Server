@@ -48,6 +48,7 @@ if [[ -d serverfiles ]]; then
                 echo "You chose Option 2"
                 export END=1
                 ;;
+            esac
             done
             ;;
         2)
