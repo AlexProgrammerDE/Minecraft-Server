@@ -26,7 +26,7 @@ if [[ -d serverfiles ]]; then
             MENU="What do you want to do?"
             OPTIONS=(1 "Run shell in the serverfiles directory."
                      2 "Quit")
-            while [ ! $END == 1 ]
+            while [ ! $END == 1 ]; do
             CHOICE=$(dialog --clear \
                             --backtitle "$BACKTITLE" \
                             --title "$TITLE" \
@@ -35,19 +35,19 @@ if [[ -d serverfiles ]]; then
                             "${OPTIONS[@]}" \
                             2>&1 >/dev/tty)
             case $CHOICE in
-            1)
-                echo "You chose Option 1"
-                clear
-                DIRECTORY=$(pwd)
-                cd serverfiles
-                read -p "Type here your command" COMMAND
-                $COMMAND
-                cd $DIRECTORY
-                ;;
-            2)
-                echo "You chose Option 2"
-                export END=1
-                ;;
+              1)
+                  echo "You chose Option 1"
+                  clear
+                  DIRECTORY=$(pwd)
+                  cd serverfiles
+                  read -p "Type here your command" COMMAND
+                  $COMMAND
+                  cd $DIRECTORY
+                  ;;
+              2)
+                  echo "You chose Option 2"
+                  export END=1
+                  ;;
             esac
             done
             ;;
