@@ -24,3 +24,4 @@ It can install minecraft multiple server in the future.
 
 - [ ] PR templates
 - [ ] README
+- [ ] Add more server management
