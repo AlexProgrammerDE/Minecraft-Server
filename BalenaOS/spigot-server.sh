@@ -4,16 +4,15 @@ HEIGHT=20
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server"
-
+OPTIONS=(1 "Yes"
+         2 "No")
+         
 mkdir serverfiles
 cd serverfiles
 
 if [ -a server.jar ]; then
 TITLE="Old Files"
 MENU="Minecraft-Server detected files in the serverfiles directory. If you won't delete them can errors occur. Do you want to delete them ? (This can't be undone.)"
-OPTIONS=(1 "Yes"
-         2 "No")
-         
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
                 --title "$TITLE" \
