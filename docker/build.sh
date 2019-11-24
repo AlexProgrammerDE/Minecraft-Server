@@ -1,8 +1,5 @@
 #!/bin/bash
 
-function mc-server() {
-
-cd /opt/Minecraft-Server/
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
@@ -413,4 +410,3 @@ case $CHOICE in
             ;;
 esac
 fi
-}
