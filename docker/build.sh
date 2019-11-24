@@ -239,7 +239,7 @@ CHOICE=$(dialog --clear \
 case $CHOICE in
         1)
             echo "You chose Option 1"
-            sudo bash bedrock-server.sh 1.13.3.0
+            sudo bash bedrock-server.sh -v 1.13.3.0
             ;;
 esac
 fi
