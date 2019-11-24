@@ -301,115 +301,115 @@ CHOICE=$(dialog --clear \
 case $CHOICE in
         1)
             echo "You chose Option 1"
-            bash spigot-server.sh 1.14.4
+            sudo bash spigot-server.sh -v 1.14.4
             ;;
         2)
             echo "You chose Option 2"
-            sudo bash spigot-server.sh 1.14.3
+            sudo bash spigot-server.sh -v 1.14.3
             ;;
         3)
             echo "You chose Option 3"
-            sudo bash spigot-server.sh 1.14.2
+            sudo bash spigot-server.sh -v 1.14.2
             ;;
         4)
             echo "You chose Option 4"
-            sudo bash spigot-server.sh 1.14.1
+            sudo bash spigot-server.sh -v 1.14.1
             ;;
         5)
             echo "You chose Option 5"
-            sudo bash spigot-server.sh 1.14
+            sudo bash spigot-server.sh -v 1.14
             ;;
         6)
             echo "You chose Option 6"
-            sudo bash spigot-server.sh 1.13.2
+            sudo bash spigot-server.sh -v 1.13.2
             ;;
         7)
             echo "You chose Option 7"
-            sudo bash spigot-server.sh 1.13.1
+            sudo bash spigot-server.sh -v 1.13.1
             ;;
         8)
             echo "You chose Option 8"
-            sudo bash spigot-server.sh 1.13
+            sudo bash spigot-server.sh -v 1.13
             ;;
         9)
             echo "You chose Option 9"
-            sudo bash spigot-server.sh 1.12.2
+            sudo bash spigot-server.sh -v 1.12.2
             ;;
         10)
             echo "You chose Option 10"
-            sudo bash spigot-server.sh 1.12.1
+            sudo bash spigot-server.sh -v 1.12.1
             ;;
         11)
             echo "You chose Option 11"
-            sudo bash spigot-server.sh 1.12
+            sudo bash spigot-server.sh -v 1.12
             ;;
         12)
             echo "You chose Option 12"
-            sudo bash spigot-server.sh 1.11.2
+            sudo bash spigot-server.sh -v 1.11.2
             ;;
         13)
             echo "You chose Option 13"
-            sudo bash spigot-server.sh 1.11.1
+            sudo bash spigot-server.sh -v 1.11.1
             ;;
         14)
             echo "You chose Option 14"
-            sudo bash spigot-server.sh 1.11
+            sudo bash spigot-server.sh -v 1.11
             ;;
         15)
             echo "You chose Option 15"
-            sudo bash spigot-server.sh 1.10.2
+            sudo bash spigot-server.sh -v 1.10.2
             ;;
         16)
             echo "You chose Option 16"
-            sudo bash spigot-server.sh 1.10
+            sudo bash spigot-server.sh -v 1.10
             ;;
         17)
             echo "You chose Option 17"
-            sudo bash spigot-server.sh 1.9.4
+            sudo bash spigot-server.sh -v 1.9.4
             ;;
         18)
             echo "You chose Option 18"
-            sudo bash spigot-server.sh 1.9.2
+            sudo bash spigot-server.sh -v 1.9.2
             ;;
         19)
             echo "You chose Option 19"
-            sudo bash spigot-server.sh 1.9
+            sudo bash spigot-server.sh -v 1.9
             ;;
         20)
             echo "You chose Option 20"
-            sudo bash spigot-server.sh 1.8.8
+            sudo bash spigot-server.sh -v 1.8.8
             ;;
         21)
             echo "You chose Option 21"
-            sudo bash spigot-server.sh 1.8.7
+            sudo bash spigot-server.sh -v 1.8.7
             ;;
         22)
             echo "You chose Option 22"
-            sudo bash spigot-server.sh 1.8.6
+            sudo bash spigot-server.sh -v 1.8.6
             ;;
         23)
             echo "You chose Option 23"
-            sudo bash spigot-server.sh 1.8.5
+            sudo bash spigot-server.sh -v 1.8.5
             ;;
         24)
             echo "You chose Option 24"
-            sudo bash spigot-server.sh 1.8.4
+            sudo bash spigot-server.sh -v 1.8.4
             ;;
         25)
             echo "You chose Option 25"
-            sudo bash spigot-server.sh 1.8.3
+            sudo bash spigot-server.sh -v 1.8.3
             ;;
         26)
             echo "You chose Option 26"
-            sudo bash spigot-server.sh 1.8
+            sudo bash spigot-server.sh -v 1.8
             ;;
         27)
             echo "You chose Option 27"
-            sudo bash spigot-server.sh 1.7.10
+            sudo bash spigot-server.sh -v 1.7.10
             ;;
         28)
             echo "You chose Option 28"
-            sudo bash spigot-server.sh 1.7.9
+            sudo bash spigot-server.sh -v 1.7.9
             ;;
 esac
 fi
