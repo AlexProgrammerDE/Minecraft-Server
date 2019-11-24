@@ -1,0 +1,28 @@
+name: Sync
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Sync the files
+      run: |
+        cp -v ./bedrock-server.sh ./BalenaOS/bedrock-server.sh
+        cp -v ./install.sh ./BalenaOS/build.sh
+        cp -v ./java-server.sh ./BalenaOS/java-server.sh
+        cp -v ./pocketmine-server.sh ./BalenaOS/pocketmine-server.sh
+        cp -v ./spigot-server.sh ./BalenaOS/spigot-server.sh
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Sync files" -a --allow-empty 
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
