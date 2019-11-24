@@ -26,7 +26,7 @@ if [[ -d serverfiles ]]; then
             MENU="What do you want to do?"
             OPTIONS=(1 "Run shell in the serverfiles directory."
                      2 "Quit")
-            while [ ! $END == 1 ]; do
+            while [ ! "$END" == 1 ]; do
             CHOICE=$(dialog --clear \
                             --backtitle "$BACKTITLE" \
                             --title "$TITLE" \
@@ -41,7 +41,7 @@ if [[ -d serverfiles ]]; then
                   DIRECTORY=$(pwd)
                   cd serverfiles
                   read -p "Type here your command" COMMAND
-                  $COMMAND
+                  $COMMAND && sleep 5
                   cd $DIRECTORY
                   ;;
               2)
@@ -61,7 +61,7 @@ fi
 
 clear 
 
-if [[ ! SERVER_INSTALL_DISABLE == 1 ]]; then
+if [[ ! "$SERVER_INSTALL_DISABLE" == 1 ]]; then
 
 TITLE="Server Version"
 MENU="Choose one of the Minecraft Editions:"
