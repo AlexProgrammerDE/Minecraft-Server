@@ -21,3 +21,6 @@ It can install minecraft multiple server in the future.
 
 - [x] Add one Pocketmine Minecraft Pocket Edition
 - [x] Add Pocketmine Minecraft Pocket Edition (Using latest)
+
+- [ ] PR templates
+- [ ] README
