@@ -18,10 +18,12 @@ jobs:
         cp -v ./spigot-server.sh ./docker/spigot-server.sh
     - name: Commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "Sync [Bot]"
+        git config --local user.email "$github_email"
+        git config --local user.name "AlexProgrammerDE"
         git add .
         git commit -m "Sync files" -a --allow-empty 
+      env:
+        github_email: ${{ secrets.GITHUB_EMAIL }}
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
