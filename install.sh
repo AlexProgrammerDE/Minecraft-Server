@@ -2,6 +2,12 @@
 
 sudo apt update 
 sudo apt install -y dialog wget
+
+git clone https://github.com/Tiiffi/mcrcon.git
+cd mcrcon
+make
+sudo make install
+
 sudo mkdir /opt/Minecraft-Server
 sudo cp * /opt/Minecraft-Server
 sudo chmod +x /opt/Minecraft-Server/start.sh
