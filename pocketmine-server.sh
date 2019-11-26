@@ -41,6 +41,14 @@ MENU="Minecraft-Server Pocketmine has a setup wizard, which this tool can automa
 OPTIONS=(1 "Yes"
          2 "No")
          
+CHOICE=$(dialog --clear \
+                --backtitle "$BACKTITLE" \
+                --title "$TITLE" \
+                --menu "$MENU" \
+                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                "${OPTIONS[@]}" \
+                2>&1 >/dev/tty)
+                
 case $CHOICE in
         1)
             ./start.sh << EOF
