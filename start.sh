@@ -24,7 +24,7 @@ if [[ -d serverfiles ]]; then
             export SERVER_INSTALL_DISABLE=1
             TITLE="Editing."
             MENU="What do you want to do?"
-            OPTIONS=(1 "Run shell in the serverfiles directory."
+            OPTIONS=(1 "Run shell in the serverfiles."
                      2 "Quit")
             while [ ! "$END" == 1 ]; do
             CHOICE=$(dialog --clear \
@@ -41,7 +41,7 @@ if [[ -d serverfiles ]]; then
                   DIRECTORY=$(pwd)
                   cd serverfiles
                   while [ ! "$COMMAND" == stop ]; do
-                  read -p "Type here your command: [stop]" COMMAND
+                  read -p "Type here your command: [stop] " COMMAND
                   $COMMAND
                   if [[ -z "$COMMAND" ]]; then
                     export COMMAND=stop
