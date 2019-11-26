@@ -8,7 +8,7 @@ BACKTITLE="Minecraft-Server"
 mkdir serverfiles
 cd serverfiles
 
-if [ -a server.jar ]; then
+if [ -a PocketMine-MP.phar ]; then
 TITLE="Old Files"
 MENU="Minecraft-Server detected files in the serverfiles directory. If you won't delete them can errors occur. Do you want to delete them ? (This can't be undone.)"
 OPTIONS=(1 "Yes"
