@@ -40,8 +40,14 @@ if [[ -d serverfiles ]]; then
                   clear
                   DIRECTORY=$(pwd)
                   cd serverfiles
-                  read -p "Type here your command" COMMAND
-                  $COMMAND && sleep 5
+                  while [ ! "$COMMAND" == exit ]; do
+                  read -p "Type here your command: [exit]" COMMAND
+                  $COMMAND
+                  if [[ -z "$COMMAND" ]]; then
+                    export COMMAND=exit
+                  fi
+                  done
+                  export COMMAND=0
                   cd $DIRECTORY
                   ;;
               2)
