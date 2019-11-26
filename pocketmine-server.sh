@@ -53,4 +53,3 @@ case $CHOICE in
             ./start.sh
             ;;
 esac
-fi
