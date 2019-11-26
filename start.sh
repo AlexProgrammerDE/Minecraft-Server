@@ -40,11 +40,11 @@ if [[ -d serverfiles ]]; then
                   clear
                   DIRECTORY=$(pwd)
                   cd serverfiles
-                  while [ ! "$COMMAND" == exit ]; do
-                  read -p "Type here your command: [exit]" COMMAND
+                  while [ ! "$COMMAND" == stop ]; do
+                  read -p "Type here your command: [stop]" COMMAND
                   $COMMAND
                   if [[ -z "$COMMAND" ]]; then
-                    export COMMAND=exit
+                    export COMMAND=stop
                   fi
                   done
                   export COMMAND=0
