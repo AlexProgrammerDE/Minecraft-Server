@@ -140,7 +140,28 @@ OPTIONS=(1 "1.14.4"
          31 "1.8.1"
          32 "1.8"
          33 "1.7.10"
-         34 "1.7.9")
+         34 "1.7.9"
+         35 "1.7.8"
+         36 "1.7.7"
+         37 "1.7.6"
+         38 "1.7.5"
+         39 "1.7.4"
+         40 "1.7.3"
+         41 "1.7.2"
+         42 "1.6.4"
+         43 "1.6.2"
+         44 "1.6.1"
+         45 "1.5.2"
+         46 "1.5.1"
+         47 "1.4.7"
+         48 "1.4.6"
+         49 "1.4.5"
+         50 "1.4.4"
+         51 "1.4.2"
+         52 "1.3.2"
+         53 "1.3.1"
+         54 "1.2.5")
+         
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
                 --title "$TITLE" \
@@ -148,6 +169,7 @@ CHOICE=$(dialog --clear \
                 $HEIGHT $WIDTH $CHOICE_HEIGHT \
                 "${OPTIONS[@]}" \
                 2>&1 >/dev/tty)
+                
 case $CHOICE in
         1)
             echo "You chose Option 1"
@@ -284,6 +306,86 @@ case $CHOICE in
         34)
             echo "You chose Option 34"
             bash java-server.sh -v 1.7.9
+            ;;
+        35)
+            echo "You chose Option 35"
+            bash java-server.sh -v 1.7.8
+            ;;
+        36)
+            echo "You chose Option 36"
+            bash java-server.sh -v 1.7.7
+            ;;
+        37)
+            echo "You chose Option 37"
+            bash java-server.sh -v 1.7.6
+            ;;
+        38)
+            echo "You chose Option 38"
+            bash java-server.sh -v 1.7.5
+            ;;
+        39)
+            echo "You chose Option 39"
+            bash java-server.sh -v 1.7.4
+            ;;
+        40)
+            echo "You chose Option 40"
+            bash java-server.sh -v 1.7.3
+            ;;
+        41)
+            echo "You chose Option 41"
+            bash java-server.sh -v 1.7.2
+            ;;
+        42)
+            echo "You chose Option 42"
+            bash java-server.sh -v 1.6.4
+            ;;
+        43)
+            echo "You chose Option 43"
+            bash java-server.sh -v 1.6.2
+            ;;
+        44)
+            echo "You chose Option 44"
+            bash java-server.sh -v 1.6.1
+            ;;
+        45)
+            echo "You chose Option 45"
+            bash java-server.sh -v 1.5.2
+            ;;
+        46)
+            echo "You chose Option 46"
+            bash java-server.sh -v 1.5.1
+            ;;
+        47)
+            echo "You chose Option 47"
+            bash java-server.sh -v 1.4.7
+            ;;
+        48)
+            echo "You chose Option 48"
+            bash java-server.sh -v 1.4.6
+            ;;
+        49)
+            echo "You chose Option 49"
+            bash java-server.sh -v 1.4.5
+            ;;
+        50)
+            echo "You chose Option 50"
+            bash java-server.sh -v 1.4.4
+            ;;
+        51)
+            echo "You chose Option 51"
+            bash java-server.sh -v 1.4.2
+            ;;
+        52)
+            echo "You chose Option 52"
+            bash java-server.sh -v 1.3.2
+            ;;
+        53)
+            echo "You chose Option 53"
+            bash java-server.sh -v 1.3.1
+            ;;
+        54)
+            echo "You chose Option 54"
+            bash java-server.sh -v 1.2.5
             ;;
 esac
 fi
