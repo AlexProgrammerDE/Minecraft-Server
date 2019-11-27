@@ -7,7 +7,7 @@ This is a Server installer. It supports multple server.
 - [x] Add main interface
 
 - [x] Add one Vanilla Minecraft Java Edition
-- [ ] Add Vanilla Minecraft Java Edition
+- [x] Add Vanilla Minecraft Java Edition
 
 - [x] Add one Vanilla Minecraft Bedrock Edition
 - [ ] Add Vanilla Minecraft Bedrock Edition
