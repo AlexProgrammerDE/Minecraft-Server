@@ -804,6 +804,446 @@ case $CHOICE in
                           ;;
               esac
             fi
+            if [[ $arg1 == 1.7.8 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.7.8/server/c69ebfb84c2577661770371c4accdd5f87b8b21d/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.7 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.7.7/server/a6ffc1624da980986c6cc12a1ddc79ab1b025c62/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.6 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.7.6/server/41ea7757d4d7f74b95fc1ac20f919a8e521e910c/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.5 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.7.5/server/e1d557b2e31ea881404e41b05ec15c810415e060/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.4 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.7.4/server/61220311cef80aecc4cd8afecd5f18ca6b9461ff/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.3 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.7.3/server/707857a7bc7bf54fe60d557cca71004c34aa07bb/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.2 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.7.2/server/3716cac82982e7c2eb09f83028b555e9ea606002/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.6.4 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.6.4/server/050f93c1f3fe9e2052398f7bd6aca10c63d64a87/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.6.2 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.6.2/server/01b6ea555c6978e6713e2a2dfd7fe19b1449ca54/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.6.1 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.6.1/server/0252918a5f9d47e3c6eb1dfec02134d1374a89b4/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.5.2 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.5.2/server/f9ae3f651319151ce99a0bfad6b34fa16eb6775f/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi            
+            if [[ $arg1 == 1.5.1 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.5.1/server/d07c71ee2767dabb79fb32dad8162e1b854d5324/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.4.7 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.4.7/server/2f0ec8efddd2f2c674c77be9ddb370b727dec676/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.4.6 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.4.6/server/a0aeb5709af5f2c3058c1cf0dc6b110a7a61278c/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.4.5 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.4.5/server/c12fd88a8233d2c517dbc8196ba2ae855f4d36ea/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.4.4 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.4.4/server/4215dcadb706508bf9d6d64209a0080b9cee9e71/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.4.2 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.4.2/server/5be700523a729bb78ef99206fb480a63dcd09825/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.3.2 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.3.2/server/3de2ae6c488135596e073a9589842800c9f53bfe/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.3.1 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.3.1/server/82563ce498bfc1fc8a2cb5bf236f7da86a390646/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.2.5 ]]; then
+              wget -O server.jar https://launcher.mojang.com/mc/game/1.2.5/server/d8321edc9470e56b8ad5c67bbd16beba25843336/server.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
             clear            
             ;;
         2)
