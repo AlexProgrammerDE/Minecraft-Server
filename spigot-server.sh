@@ -655,6 +655,204 @@ done
                           ;;
               esac
             fi
+            if [[ $arg1 == 1.7.8 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.7.8-R0.1-SNAPSHOT.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.5 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.7.5-R0.1-SNAPSHOT-1387.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.7.2 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.7.2-R0.4-SNAPSHOT-1339.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.6.4 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.6.4-R2.1-SNAPSHOT.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.6.2 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.6.2-R1.1-SNAPSHOT.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.5.2 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.5.2-R1.1-SNAPSHOT.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.5.1 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.5.1-R0.1-SNAPSHOT.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.4.7 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.4.7-R1.1-SNAPSHOT.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
+            if [[ $arg1 == 1.4.6 ]]; then
+              wget -O server.jar https://cdn.getbukkit.org/spigot/spigot-1.4.6-R0.4-SNAPSHOT.jar
+              java -Xmx1024M -Xms1024M -jar server.jar nogui &
+              sleep 10
+              TITLE="EULA"
+              MENU="Minecraft-Server can accept automatically the EULA. If you accept the EULA say yes. If you want to accept or read the EULA by yourself say no."
+              CHOICE=$(dialog --clear \
+                              --backtitle "$BACKTITLE" \
+                              --title "$TITLE" \
+                              --menu "$MENU" \
+                              $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                              "${OPTIONS[@]}" \
+                              2>&1 >/dev/tty)
+              case $CHOICE in
+                      1)
+                          sudo echo "eula=true" >> eula.txt
+                          ;;
+                      2)
+                          sudo nano eula.txt
+                          ;;
+              esac
+            fi
             clear            
 
-sudo java -Xmx1024M -Xms1024M -jar server.jar nogui 
+java -Xmx1024M -Xms1024M -jar server.jar nogui 
