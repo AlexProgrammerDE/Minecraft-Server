@@ -41,6 +41,7 @@ if [[ -d serverfiles ]]; then
                   DIRECTORY=$(pwd)
                   cd serverfiles
                   while [ ! "$COMMAND" == stop ]; do
+                  ls
                   read -p "Type here your command: [stop] " COMMAND
                   $COMMAND
                   if [[ -z "$COMMAND" ]]; then
