@@ -454,7 +454,17 @@ OPTIONS=(1 "1.14.4"
          25 "1.8.3"
          26 "1.8"
          27 "1.7.10"
-         28 "1.7.9")
+         28 "1.7.9"
+         29 "1.7.8"
+         30 "1.7.5"
+         31 "1.7.2"
+         32 "1.6.4"
+         33 "1.6.2"
+         34 "1.5.2"
+         35 "1.5.1"
+         36 "1.4.7"
+         37 "1.4.6")
+         
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
                 --title "$TITLE" \
@@ -462,6 +472,7 @@ CHOICE=$(dialog --clear \
                 $HEIGHT $WIDTH $CHOICE_HEIGHT \
                 "${OPTIONS[@]}" \
                 2>&1 >/dev/tty)
+                
 case $CHOICE in
         1)
             echo "You chose Option 1"
@@ -574,6 +585,42 @@ case $CHOICE in
         28)
             echo "You chose Option 28"
             bash spigot-server.sh -v 1.7.9
+            ;;
+        29)
+            echo "You chose Option 29"
+            bash spigot-server.sh -v 1.7.8
+            ;;
+        30)
+            echo "You chose Option 30"
+            bash spigot-server.sh -v 1.7.5
+            ;;
+        31)
+            echo "You chose Option 31"
+            bash spigot-server.sh -v 1.7.2
+            ;;
+        32)
+            echo "You chose Option 32"
+            bash spigot-server.sh -v 1.6.4
+            ;;
+        33)
+            echo "You chose Option 33"
+            bash spigot-server.sh -v 1.6.2
+            ;;
+        34)
+            echo "You chose Option 34"
+            bash spigot-server.sh -v 1.5.2
+            ;;
+        35)
+            echo "You chose Option 35"
+            bash spigot-server.sh -v 1.5.1
+            ;;
+        36)
+            echo "You chose Option 36"
+            bash spigot-server.sh -v 1.4.7
+            ;;
+        37)
+            echo "You chose Option 37"
+            bash spigot-server.sh -v 1.4.6
             ;;
 esac
 fi
