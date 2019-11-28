@@ -37,7 +37,7 @@ case $CHOICE in
                wget -O bedrock-server.zip https://minecraft.azureedge.net/bin-linux/bedrock-server-1.13.3.0.zip
                unzip bedrock-server.zip
                touch bedrock
-               ./bedrock_server 
+               ./bedrock_server &
             fi
             ;;
 esac
