@@ -647,3 +647,4 @@ esac
 fi
 fi
 clear
+echo "Your Server is now prepared. If you would like to start him you need to restart this script."
