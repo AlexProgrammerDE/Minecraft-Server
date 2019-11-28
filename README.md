@@ -2,6 +2,20 @@
 
 This is a Server installer. It supports multple server.
 
+## Start
+
+You can run my script as follow:
+
+```bash
+bash start.sh
+```
+
+## Contributions
+
+This project is open for Pull Request.
+Feel free to make forks and to use them in PR's  .
+![GitHub forks](https://img.shields.io/github/forks/AlexProgrammerDE/Minecraft-Server?style=social)
+
 ## To-Do
 
 - [x] Add main interface
@@ -18,5 +32,11 @@ This is a Server installer. It supports multple server.
 - [x] Add Pocketmine Minecraft Pocket Edition (Using latest)
 
 - [x] PR templates
-- [ ] README
+- [x] README
 - [ ] Add more server management
+
+If you like my work can you follow my work or like this project.
+
+![GitHub followers](https://img.shields.io/github/followers/AlexProgrammerDE?style=social)
+![GitHub stars](https://img.shields.io/github/stars/AlexProgrammerDE/Minecraft-Server?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/AlexProgrammerDE/Minecraft-Server?style=social)
