@@ -56,8 +56,10 @@ case $CHOICE in
             y
             y
             EOF
+            touch pocketmine 
             ;;
         2)
+            touch pocketmine
             ./start.sh
             ;;
 esac

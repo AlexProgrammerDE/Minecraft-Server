@@ -5,6 +5,9 @@ WIDTH=40
 CHOICE_HEIGHT=2
 BACKTITLE="Minecraft-Server"
 
+mkdir serverfiles
+cd serverfiles                
+
 TITLE="Agreement"
 MENU="When you chose yes you agree to the Minecraft End User License Agreement: https://minecraft.net/terms and Privacy Policy: https://go.microsoft.com/fwlink/?LinkId=521839"
 
@@ -33,6 +36,7 @@ case $CHOICE in
             if [[ $arg1 == 1.13.3.0 ]]; then
                wget -O bedrock-server.zip https://minecraft.azureedge.net/bin-linux/bedrock-server-1.13.3.0.zip
                unzip bedrock-server.zip
+               touch bedrock
                ./bedrock_server 
             fi
             ;;

@@ -25,7 +25,8 @@ if [[ -d serverfiles ]]; then
             TITLE="Editing."
             MENU="What do you want to do?"
             OPTIONS=(1 "Run shell in the serverfiles."
-                     2 "Quit")
+                     2 "Start the server."
+                     3 "Quit")
             while [ ! "$END" == 1 ]; do
             CHOICE=$(dialog --clear \
                             --backtitle "$BACKTITLE" \
@@ -53,6 +54,25 @@ if [[ -d serverfiles ]]; then
                   ;;
               2)
                   echo "You chose Option 2"
+                  clear
+                  DIRECTORY=$(pwd)
+                  cd serverfiles
+                  if [[ -a java ]]; then
+                    java -Xmx1024M -Xms1024M -jar server.jar nogui 
+                  fi
+                  if [[ -a spigot ]]; then
+                    java -Xmx1024M -Xms1024M -jar server.jar nogui 
+                  fi
+                  if [[ -a bedrock ]]; then
+                    ./bedrock_server 
+                  fi
+                  if [[ -a pocketmine ]]; then
+                    ./start.sh
+                  fi
+                  cd $DIRECTORY
+                  ;;
+              3)
+                  echo "You chose Option 3"
                   export END=1
                   ;;
             esac
@@ -60,7 +80,7 @@ if [[ -d serverfiles ]]; then
             ;;
         2)
             echo "You chose Option 2"
-            export 
+            export SERVER_INSTALL_DISABLE=0
             break
             ;;
   esac
@@ -626,3 +646,4 @@ case $CHOICE in
 esac
 fi
 fi
+clear
