@@ -6,21 +6,17 @@ This is a Server installer. It supports multple server.
 
 - [x] Add main interface
 
-- [x] Add one Vanilla Minecraft Java Edition
 - [x] Add Vanilla Minecraft Java Edition
 
-- [x] Add one Vanilla Minecraft Bedrock Edition
-- [ ] Add Vanilla Minecraft Bedrock Edition
+- [x] Add Vanilla Minecraft Bedrock Edition
 
 - [ ] Add one Forge Minecraft Java Edition
 - [ ] Add Forge Minecraft Java Edition
 
-- [x] Add one Spigot Minecraft Java Edition
 - [x] Add Spigot Minecraft Java Edition
 
-- [x] Add one Pocketmine Minecraft Pocket Edition
 - [x] Add Pocketmine Minecraft Pocket Edition (Using latest)
 
-- [ ] PR templates
+- [x] PR templates
 - [ ] README
 - [ ] Add more server management
