@@ -51,12 +51,8 @@ CHOICE=$(dialog --clear \
                 
 case $CHOICE in
         1)
-            ./start.sh << EOF
-            eng
-            y
-            y
-            EOF
             touch pocketmine 
+            echo -e "eng\ny\ny" | ./start.sh            
             ;;
         2)
             touch pocketmine
