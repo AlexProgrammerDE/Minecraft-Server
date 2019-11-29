@@ -5,6 +5,8 @@ WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server"
 
+export SERVER_INSTALL_DISABLE=0
+
 if [[ -d serverfiles ]]; then
   TITLE="Server detected."
   MENU="Do you want to edit the server?"
@@ -647,4 +649,7 @@ esac
 fi
 fi
 clear
+
+if [[ "$SERVER_INSTALL_DISABLE" == 1 ]]; then
 echo "Your Server is now prepared. If you would like to start him you need to restart this script."
+fi
