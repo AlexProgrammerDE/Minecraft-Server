@@ -12,9 +12,8 @@ bash start.sh
 
 ## Contributions
 
-This project is open for Pull Request.
+This project is open for Pull Requests.
 Feel free to make forks and to use them in PR's  .
-![GitHub forks](https://img.shields.io/github/forks/AlexProgrammerDE/Minecraft-Server?style=social)
 
 ## To-Do
 
@@ -36,7 +35,3 @@ Feel free to make forks and to use them in PR's  .
 - [ ] Add more server management
 
 If you like my work can you follow my work or like this project.
-
-![GitHub followers](https://img.shields.io/github/followers/AlexProgrammerDE?style=social)
-![GitHub stars](https://img.shields.io/github/stars/AlexProgrammerDE/Minecraft-Server?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/AlexProgrammerDE/Minecraft-Server?style=social)
