@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function mc-server {
+
+cd /opt/Minecraft-Server/
+
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
@@ -648,8 +652,11 @@ case $CHOICE in
 esac
 fi
 fi
+
 clear
 
 if [[ "$SERVER_INSTALL_DISABLE" == 1 ]]; then
 echo "Your Server is now prepared. If you would like to start him you need to restart this script."
 fi
+
+}
