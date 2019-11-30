@@ -4,10 +4,10 @@ This is a Server installer. It supports multple server.
 
 ## Start
 
-You can run my script as follow:
+You can install my script as follow:
 
 ```bash
-bash start.sh
+wget https://raw.githubusercontent.com/AlexProgrammerDE/Minecraft-Server/master/install.sh && bash install.sh
 ```
 
 ## Contributions
@@ -35,3 +35,7 @@ Feel free to make forks and to use them in PR's  .
 - [ ] Add more server management
 
 If you like my work can you follow my work or like this project.
+
+## Thanks to:
+
+- https://getbukkit.org/
