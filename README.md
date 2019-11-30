@@ -2,7 +2,7 @@
 
 This is a Server installer. It supports multple server.
 
-## Start
+## Install
 
 You can install my script as follow:
 
