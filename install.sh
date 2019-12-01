@@ -5,15 +5,17 @@ rm install.sh
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server"
+BACKTITLE="Minecraft-Server-Installer v1.0"
 
 export NO_INSTALL=0
+
 sudo apt update
 sudo apt install -y dialog
 
 cd ~/
 
 if [[ -d Minecraft-Server ]]; then
+export NO_INSTALL=1
 TITLE="Old istallation detected."
 MENU="Do you REALLY want to reinstall Minecraft-Server?"
 OPTIONS=(1 "Yes"
@@ -28,6 +30,7 @@ CHOICE=$(dialog --clear \
                   
 case $CHOICE in
       1)
+         export NO_INSTALL=0
          sudo rm -r Minecraft-Server 2> /dev/null
          ;;
       2)
@@ -37,7 +40,7 @@ case $CHOICE in
 esac
 fi
 
-if [[ "$NO_INSTALL" == 0 ]]; then
+if [[ ! "$NO_INSTALL" == 1 ]]; then
 git clone https://github.com/AlexProgrammerDE/Minecraft-Server.git
 
 source ~/Minecraft-Server/start.sh
