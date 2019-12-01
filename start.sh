@@ -2,7 +2,7 @@
 
 function mc-server {
 
-cd /opt/Minecraft-Server/
+cd ~/Minecraft-Server/
 
 HEIGHT=12
 WIDTH=40
