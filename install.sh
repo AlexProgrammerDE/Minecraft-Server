@@ -11,27 +11,28 @@ sudo apt install -y dialog
 
 cd ~/
 
-if [[ -d serverfiles ]]; then
-  TITLE="Old istallation detected."
-  MENU="Do you REALLY want to reinstall Minecraft-Server?"
-  OPTIONS=(1 "Yes"
-           2 "No")
-  CHOICE=$(dialog --clear \
-                  --backtitle "$BACKTITLE" \
-                  --title "$TITLE" \
-                  --menu "$MENU" \
-                  $HEIGHT $WIDTH $CHOICE_HEIGHT \
-                  "${OPTIONS[@]}" \
-                  2>&1 >/dev/tty)
+if [[ -d Minecraft-Server ]]; then
+TITLE="Old istallation detected."
+MENU="Do you REALLY want to reinstall Minecraft-Server?"
+OPTIONS=(1 "Yes"
+         2 "No")
+CHOICE=$(dialog --clear \
+                --backtitle "$BACKTITLE" \
+                --title "$TITLE" \
+                --menu "$MENU" \
+                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                "${OPTIONS[@]}" \
+                2>&1 >/dev/tty)
                   
-  case $CHOICE in
-        1)
-           sudo rm -r Minecraft-Server 2> /dev/null
-           ;;
-        2)
-           export NO_INSTALL=1
-           break
-           ;;
+case $CHOICE in
+      1)
+         sudo rm -r Minecraft-Server 2> /dev/null
+         ;;
+      2)
+         export NO_INSTALL=1
+         break
+         ;;
+esac
 fi
 
 if [[ "$NO_INSTALL" == 0 ]]; then
