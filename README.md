@@ -10,10 +10,13 @@ You can install my script as follow:
 wget https://raw.githubusercontent.com/AlexProgrammerDE/Minecraft-Server/master/install.sh && bash install.sh
 ```
 
+After the installation you need to close the terminal and open a new.
+When you run `mc-server` the script starts.
+
 ## Contributions
 
 This project is open for Pull Requests.
-Feel free to make forks and to use them in PR's  .
+Feel free to make forks and to use them in PR's .
 
 ## To-Do
 
