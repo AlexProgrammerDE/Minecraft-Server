@@ -1,0 +1,3 @@
+[submodule "No-IP-DUC-Installer"]
+	path = No-IP-DUC-Installer
+	url = https://github.com/AlexProgrammerDE/No-IP-DUC-Installer.git
