@@ -1,6 +1,6 @@
 # Minecraft-Server [![HitCount](http://hits.dwyl.io/AlexProgrammerDE/Minecraft-Server.svg)](http://hits.dwyl.io/AlexProgrammerDE/Minecraft-Server)  [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)  ![GitHub](https://img.shields.io/github/license/AlexProgrammerDE/Minecraft-Server) ![GitHub issues](https://img.shields.io/github/issues-raw/AlexProgrammerDE/Minecraft-Server) ![GitHub repo size](https://img.shields.io/github/repo-size/AlexProgrammerDE/Minecraft-Server) 
 
-This is a Server installer. It supports multple server.
+This is a Minecraft Server installer. It supports multple servers.
 
 ## Install
 
