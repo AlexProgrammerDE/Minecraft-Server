@@ -54,10 +54,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -76,10 +76,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -98,10 +98,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -120,10 +120,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -142,10 +142,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -164,10 +164,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -186,10 +186,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -208,10 +208,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -230,10 +230,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -252,10 +252,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -274,10 +274,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -296,10 +296,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -318,10 +318,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -340,10 +340,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -362,10 +362,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -384,10 +384,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -406,10 +406,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -428,10 +428,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -450,10 +450,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -472,10 +472,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -494,10 +494,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -516,10 +516,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -538,10 +538,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -560,10 +560,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -582,10 +582,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -604,10 +604,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -626,10 +626,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -648,10 +648,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -670,10 +670,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -692,10 +692,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -714,10 +714,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -736,10 +736,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -758,10 +758,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -780,10 +780,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -802,10 +802,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -824,10 +824,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
@@ -846,10 +846,10 @@ done
                               2>&1 >/dev/tty)
               case $CHOICE in
                       1)
-                          sudo echo "eula=true" >> eula.txt
+                          echo "eula=true" >> eula.txt
                           ;;
                       2)
-                          sudo nano eula.txt
+                          nano eula.txt
                           ;;
               esac
             fi
