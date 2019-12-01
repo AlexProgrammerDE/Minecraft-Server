@@ -7,7 +7,7 @@ This is a Server installer. It supports multple server.
 You can install my script as follow:
 
 ```bash
-wget https://raw.githubusercontent.com/AlexProgrammerDE/Minecraft-Server/master/install.sh && bash install.sh
+wget -O install.sh https://raw.githubusercontent.com/AlexProgrammerDE/Minecraft-Server/master/install.sh && bash install.sh
 ```
 
 After the installation you need to close the terminal and open a new.
