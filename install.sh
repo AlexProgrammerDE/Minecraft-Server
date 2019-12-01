@@ -3,9 +3,9 @@
 sudo apt update
 sudo apt install -y dialog
 
-cd /opt/
+cd ~/
 sudo rm -r Minecraft-Server
-sudo git clone https://github.com/AlexProgrammerDE/Minecraft-Server.git
+git clone https://github.com/AlexProgrammerDE/Minecraft-Server.git
 
 source /opt/Minecraft-Server/start.sh
 echo "source /opt/Minecraft-Server/start.sh" > ~/.bashrc
