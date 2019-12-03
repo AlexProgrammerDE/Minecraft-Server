@@ -2,6 +2,19 @@
 
 function mc-server {
 
+while getopts ":h:" opt; do
+  case $opt in
+    h) arg1=1
+    ;;
+    \?) echo "Invalid option -$OPTARG" >&2
+    ;;
+  esac
+done
+
+if [[ "$arg1"]]; then
+  echo "mc-server has at the moment no documentation. This feature will be added in a future release." 
+fi
+
 cd ~/Minecraft-Server/
 
 HEIGHT=12
