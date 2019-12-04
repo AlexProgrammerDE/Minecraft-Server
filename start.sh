@@ -4,20 +4,26 @@ function mc-server {
 
 cd ~/Minecraft-Server/
 
-HEIGHT=12
-WIDTH=40
-CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server v1.1"
+export VERSION=1.2
 export arg1=0
+export arg2=0
 export SERVER_INSTALL_DISABLE=0
 export MANAGING_DISABLED=0
 export SERVER_INSTALL_DISABLE=0
 export OPTIND=1
 
-while getopts "h?:" opt; do
+HEIGHT=12
+WIDTH=40
+CHOICE_HEIGHT=4
+BACKTITLE="Minecraft-Server v$VERSION"
+
+while getopts "h?v:" opt; do
   case $opt in
     h|\?) 
         export arg1=1
+        ;;
+    v)
+        export arg2=1
         ;;
   esac
 done
@@ -28,6 +34,10 @@ if [[ "$arg1" == 1 ]]; then
   export SERVER_INSTALL_DISABLE=1
   export MANAGING_DISABLED=1
   echo "mc-server has at the moment no documentation. This feature will be added in a future release." 
+fi
+
+if [[ "$arg2" == 1 ]]; then
+  echo "mc-server v$VERSION"
 fi
 
 if [[ -d serverfiles ]]; then
