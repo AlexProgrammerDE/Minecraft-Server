@@ -13,7 +13,7 @@ while getopts ":h:" opt; do
   esac
 done
 
-if [[ "$arg1" == 1]]; then
+if [[ "$arg1" == 1 ]]; then
   echo "mc-server has at the moment no documentation. This feature will be added in a future release." 
 fi
 
