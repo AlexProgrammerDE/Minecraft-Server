@@ -65,6 +65,7 @@ if [[ "$arg3" == 1 ]]; then
   cd $DIRECTORY
   else
     echo "No server found. Please install one first."
+  fi
 fi
 
 if [[ -d serverfiles ]]; then
