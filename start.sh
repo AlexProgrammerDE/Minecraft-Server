@@ -31,7 +31,7 @@ BACKTITLE="Minecraft-Server"
 export SERVER_INSTALL_DISABLE=0
 
 if [[ -d serverfiles ]]; then
-if [[ "$MANAGING_DISABLED" == 9 ]]; then
+if [[ "$MANAGING_DISABLED" == 0 ]]; then
   TITLE="Server detected."
   MENU="Do you want to edit the server?"
   OPTIONS=(1 "Manage the server."
