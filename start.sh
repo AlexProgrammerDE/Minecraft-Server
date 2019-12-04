@@ -2,11 +2,14 @@
 
 function mc-server {
 
+# Save actual directory
 START_DIRECTORY=$(pwd)
 
+# Go to installation folder
 cd ~/Minecraft-Server/
 
-export VERSION=1.2.2
+# Set Variables
+export VERSION=1.2.3
 export arg1=0
 export arg2=0
 export arg3=0
@@ -19,6 +22,10 @@ HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server v$VERSION"
+
+# Parse arguments
+
+OPTIND=1
 
 while getopts "vh?:" opt; do
   case $opt in
@@ -34,18 +41,21 @@ done
 
 shift $((OPTIND-1))
 
+# -h
 if [[ "$arg1" == 1 ]]; then
   export SERVER_INSTALL_DISABLE=1
   export MANAGING_DISABLED=1
   echo "mc-server has at the moment no documentation. This feature will be added in a future release." 
 fi
 
+# -v
 if [[ "$arg2" == 1 ]]; then
   export SERVER_INSTALL_DISABLE=1
   export MANAGING_DISABLED=1
   echo "mc-server v$VERSION"
 fi
 
+# -s
 if [[ "$arg3" == 1 ]]; then
   export SERVER_INSTALL_DISABLE=1
   export MANAGING_DISABLED=1
@@ -70,10 +80,11 @@ if [[ "$arg3" == 1 ]]; then
   fi
 fi
 
+# Managing utility
 if [[ -d serverfiles ]]; then
 if [[ "$MANAGING_DISABLED" == 0 ]]; then
   TITLE="Server detected."
-  MENU="Do you want to edit the server?"
+  MENU="Do you want to manage the server?"
   OPTIONS=(1 "Manage the server."
            2 "Create a new server.")
   CHOICE=$(dialog --clear \
@@ -103,6 +114,7 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
                             2>&1 >/dev/tty)
             case $CHOICE in
               1)
+                  # Spawn shell in serverfiles
                   echo "You chose Option 1"
                   clear
                   DIRECTORY=$(pwd)
@@ -119,6 +131,7 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
                   cd $DIRECTORY
                   ;;
               2)
+                  # Manually start the vserver
                   echo "You chose Option 2"
                   clear
                   DIRECTORY=$(pwd)
@@ -138,6 +151,7 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
                   cd $DIRECTORY
                   ;;
               3)
+                  # Quit
                   echo "You chose Option 3"
                   export END=1
                   ;;
@@ -154,6 +168,7 @@ fi
 clear 
 fi
 
+# Create a new Server
 if [[ "$SERVER_INSTALL_DISABLE" == 0 ]]; then
 
 TITLE="Server Version"
@@ -175,23 +190,28 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
+            # Java Vanilla
             echo "You chose Option 1"
             export MINECRAFTEDITION=1
             ;;
         2)
+            # Bedrock Vanilla
             echo "You chose Option 2"
             export MINECRAFTEDITION=2
             ;;
         3)
+            # Pocket Vanilla
             echo "You chose Option 3"
             export MINECRAFTEDITION=3
             ;;
         4)
+            # Java Spigot
             echo "You chose Option 4"
             export MINECRAFTEDITION=4
             ;;
 esac
 
+# Java Vanilla
 if [[ "$MINECRAFTEDITION" == 1 ]]; then
 MENU="Choose one of the Minecraft Versions:"
 OPTIONS=(1 "1.14.4"
@@ -477,6 +497,7 @@ case $CHOICE in
 esac
 fi
 
+# Bedrock Vanilla
 if [[ "$MINECRAFTEDITION" == 2 ]]; then
 MENU="Choose one of the Minecraft Versions:"
 OPTIONS=(1 "1.13.3.0")
@@ -495,6 +516,7 @@ case $CHOICE in
 esac
 fi
 
+# Pocket Vanilla
 if [[ "$MINECRAFTEDITION" == 3 ]]; then
 MENU="Choose one of the Minecraft Versions:"
 OPTIONS=(1 "latest")
@@ -513,6 +535,7 @@ case $CHOICE in
 esac
 fi
 
+# Java Spigot
 if [[ "$MINECRAFTEDITION" == 4 ]]; then
 MENU="Choose one of the Minecraft Versions:"
 OPTIONS=(1 "1.14.4"
@@ -715,10 +738,12 @@ fi
 clear
 fi
 
+# Succes message
 if [[ "$SERVER_INSTALL_DISABLE" == 0 ]]; then
   echo "Your Server is now prepared. If you would like to start him you need to restart this script."
 fi
 
+# Go back to start directory
 cd $START_DIRECTORY
 
 }
