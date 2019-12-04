@@ -7,6 +7,7 @@ cd ~/Minecraft-Server/
 export VERSION=1.2.1
 export arg1=0
 export arg2=0
+export arg3=0
 export SERVER_INSTALL_DISABLE=0
 export MANAGING_DISABLED=0
 export SERVER_INSTALL_DISABLE=0
@@ -19,6 +20,8 @@ BACKTITLE="Minecraft-Server v$VERSION"
 
 while getopts "vh?:" opt; do
   case $opt in
+    s)  export arg3=1
+        ;;
     v)  export arg2=1
         ;;
     h|\?) 
@@ -39,6 +42,29 @@ if [[ "$arg2" == 1 ]]; then
   export SERVER_INSTALL_DISABLE=1
   export MANAGING_DISABLED=1
   echo "mc-server v$VERSION"
+fi
+
+if [[ "$arg3" == 1 ]]; then
+  export SERVER_INSTALL_DISABLE=1
+  export MANAGING_DISABLED=1
+  if [[ -d serverfiles ]]; then
+  DIRECTORY=$(pwd)
+  cd serverfiles
+  if [[ -a java ]]; then
+    java -Xmx1024M -Xms1024M -jar server.jar nogui 
+  fi
+  if [[ -a spigot ]]; then
+    java -Xmx1024M -Xms1024M -jar server.jar nogui 
+  fi
+  if [[ -a bedrock ]]; then
+    ./bedrock_server 
+  fi
+  if [[ -a pocketmine ]]; then
+    ./start.sh
+  fi
+  cd $DIRECTORY
+  else
+    echo "No server found. Please install one first."
 fi
 
 if [[ -d serverfiles ]]; then
