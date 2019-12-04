@@ -5,13 +5,26 @@ cd ~/
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.2"
+BACKTITLE="Minecraft-Server-Installer v1.3"
 export NO_INSTALL=0
+export arg1=0
+
+while getopts "yh?:" opt; do
+    case "$opt" in
+    y)  arg1=1
+        ;;
+    h)  echo "You can add -y to skip acception."
+        ;;
+    \?) echo "Wrong argument -$OPTARG"
+        ;;
+    esac
+done
 
 sudo apt update
 sudo apt install -y dialog
 
 if [[ -d Minecraft-Server ]]; then
+if [[ "$arg1" == 0 ]]; then
 export NO_INSTALL=1
 TITLE="Old istallation detected."
 MENU="Do you REALLY want to reinstall Minecraft-Server?"
@@ -35,6 +48,9 @@ case $CHOICE in
          ;;
 esac
 clear
+else
+  sudo rm -r Minecraft-Server 2> /dev/null
+fi
 fi
 
 if [[ "$NO_INSTALL" == 0 ]]; then
