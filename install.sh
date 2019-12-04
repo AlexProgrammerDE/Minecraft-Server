@@ -1,16 +1,15 @@
 #!/bin/bash
 
+cd ~/
+
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.1"
-
+BACKTITLE="Minecraft-Server-Installer v1.2"
 export NO_INSTALL=0
 
 sudo apt update
 sudo apt install -y dialog
-
-cd ~/
 
 if [[ -d Minecraft-Server ]]; then
 export NO_INSTALL=1
@@ -32,15 +31,14 @@ case $CHOICE in
          sudo rm -r Minecraft-Server 2> /dev/null
          ;;
       2)
-         export NO_INSTALL=1
          break
          ;;
 esac
+clear
 fi
 
-if [[ ! "$NO_INSTALL" == 1 ]]; then
+if [[ "$NO_INSTALL" == 0 ]]; then
 git clone https://github.com/AlexProgrammerDE/Minecraft-Server.git
-
 source ~/Minecraft-Server/start.sh
 echo "source ~/Minecraft-Server/start.sh" > ~/.bashrc
 fi
