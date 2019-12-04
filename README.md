@@ -22,7 +22,7 @@ Feel free to make forks and to use them in PR's .
 
 ## Issues
 
-I am happy about every reported issue, it is no matter how small he is.
+I am happy about every reported issue, it is no matter how small it is.
 
 ## To-Do
 
