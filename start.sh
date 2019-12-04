@@ -2,9 +2,11 @@
 
 function mc-server {
 
+START_DIRECTORY=$(pwd)
+
 cd ~/Minecraft-Server/
 
-export VERSION=1.2.1
+export VERSION=1.2.2
 export arg1=0
 export arg2=0
 export arg3=0
@@ -716,5 +718,7 @@ fi
 if [[ "$SERVER_INSTALL_DISABLE" == 0 ]]; then
   echo "Your Server is now prepared. If you would like to start him you need to restart this script."
 fi
+
+cd $START_DIRECTORY
 
 }
