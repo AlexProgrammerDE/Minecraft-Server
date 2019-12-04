@@ -5,7 +5,7 @@ cd ~/
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.3.1"
+BACKTITLE="Minecraft-Server-Installer v1.3.2"
 export NO_INSTALL=0
 export arg1=0
 
@@ -62,3 +62,5 @@ source ~/Minecraft-Server/start.sh
 echo "source ~/Minecraft-Server/start.sh" > ~/.bashrc
 fi
 fi
+
+echo "The installer has now finished. Please close this terminal and open a new to use your installation."
