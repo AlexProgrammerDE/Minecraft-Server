@@ -69,8 +69,8 @@ if [[ "$NO_INSTALL" == 0 ]]; then
 git clone https://github.com/AlexProgrammerDE/Minecraft-Server.git
 
 # Install man pages
-sudo install -g 0 -o 0 -m 0644 ./Minecraft-Server/mc-server.1 /usr/local/man/man8/
-sudo gzip /usr/local/man/man8/mc-server.1
+sudo cp ./Minecraft-Server/mc-server.1 /usr/local/share/man/man1/
+sudo mandb
 
 # Add to .bashrc
 source ~/Minecraft-Server/start.sh
