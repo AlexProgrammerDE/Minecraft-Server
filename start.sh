@@ -2,6 +2,12 @@
 
 function mc-server {
 
+cd ~/Minecraft-Server/
+
+HEIGHT=12
+WIDTH=40
+CHOICE_HEIGHT=4
+BACKTITLE="Minecraft-Server v1.1"
 export arg1=0
 export SERVER_INSTALL_DISABLE=0
 export MANAGING_DISABLED=0
@@ -23,13 +29,6 @@ if [[ "$arg1" == 1 ]]; then
   export MANAGING_DISABLED=1
   echo "mc-server has at the moment no documentation. This feature will be added in a future release." 
 fi
-
-cd ~/Minecraft-Server/
-
-HEIGHT=12
-WIDTH=40
-CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server"
 
 if [[ -d serverfiles ]]; then
 if [[ "$MANAGING_DISABLED" == 0 ]]; then
