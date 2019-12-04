@@ -73,8 +73,8 @@ sudo cp ./Minecraft-Server/mc-server.1 /usr/local/share/man/man1/
 sudo mandb
 
 # Add to .bashrc
-source ~/Minecraft-Server/start.sh
-echo "source ~/Minecraft-Server/start.sh" > ~/.bashrc
+source ~/Minecraft-Server/mc-server
+echo "source ~/Minecraft-Server/mc-server" > ~/.bashrc
 fi
 fi
 
