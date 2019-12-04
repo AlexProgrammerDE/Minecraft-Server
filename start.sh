@@ -22,8 +22,7 @@ while getopts "h?v:" opt; do
     h|\?) 
         export arg1=1
         ;;
-    v)
-        export arg2=1
+    v)  export arg2=1
         ;;
   esac
 done
