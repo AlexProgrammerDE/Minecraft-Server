@@ -7,11 +7,13 @@ This is a Minecraft Server installer. It supports multple server.
 You can install my script as follow:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/AlexProgrammerDE/Minecraft-Server/master/install.sh | bash
+curl -sL https://raw.githubusercontent.com/AlexProgrammerDE/Minecraft-Server/master/install.sh | bash -s -
 ```
 
 After the installation you need to close the terminal and open a new.
 When you run `mc-server` the script starts.
+
+**Note:** You can add `-y` at the end of the command if you want to skip the acception dialog.
 
 ## Contributions
 
