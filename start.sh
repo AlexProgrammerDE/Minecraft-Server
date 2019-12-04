@@ -4,7 +4,7 @@ function mc-server {
 
 cd ~/Minecraft-Server/
 
-export VERSION=1.2
+export VERSION=1.2.1
 export arg1=0
 export arg2=0
 export SERVER_INSTALL_DISABLE=0
@@ -17,12 +17,12 @@ WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server v$VERSION"
 
-while getopts "h?v:" opt; do
+while getopts "vh?:" opt; do
   case $opt in
+    v)  export arg2=1
+        ;;
     h|\?) 
         export arg1=1
-        ;;
-    v)  export arg2=1
         ;;
   esac
 done
@@ -36,6 +36,8 @@ if [[ "$arg1" == 1 ]]; then
 fi
 
 if [[ "$arg2" == 1 ]]; then
+  export SERVER_INSTALL_DISABLE=1
+  export MANAGING_DISABLED=1
   echo "mc-server v$VERSION"
 fi
 
