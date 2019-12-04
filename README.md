@@ -1,4 +1,4 @@
-# Minecraft-Server [![HitCount](http://hits.dwyl.io/AlexProgrammerDE/Minecraft-Server.svg)](http://hits.dwyl.io/AlexProgrammerDE/Minecraft-Server)  [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)  ![GitHub](https://img.shields.io/github/license/AlexProgrammerDE/Minecraft-Server) ![GitHub issues](https://img.shields.io/github/issues-raw/AlexProgrammerDE/Minecraft-Server) ![GitHub repo size](https://img.shields.io/github/repo-size/AlexProgrammerDE/Minecraft-Server) 
+# Minecraft-Server [![HitCount](http://hits.dwyl.io/AlexProgrammerDE/Minecraft-Server.svg)](http://hits.dwyl.io/AlexProgrammerDE/Minecraft-Server) [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/) ![GitHub](https://img.shields.io/github/license/AlexProgrammerDE/Minecraft-Server) ![GitHub issues](https://img.shields.io/github/issues-raw/AlexProgrammerDE/Minecraft-Server) ![GitHub repo size](https://img.shields.io/github/repo-size/AlexProgrammerDE/Minecraft-Server) 
 
 This is a Minecraft Server installer. It supports multple server.
 
@@ -20,6 +20,10 @@ When you run `mc-server` the script starts.
 This project is open for Pull Requests.
 Feel free to make forks and to use them in PR's .
 
+## Issues
+
+I am happy about every reported issue, it is no matter how small he is.
+
 ## To-Do
 
 - [x] Add main interface
@@ -28,7 +32,6 @@ Feel free to make forks and to use them in PR's .
 
 - [x] Add Vanilla Minecraft Bedrock Edition
 
-- [ ] Add one Forge Minecraft Java Edition
 - [ ] Add Forge Minecraft Java Edition
 
 - [x] Add Spigot Minecraft Java Edition
