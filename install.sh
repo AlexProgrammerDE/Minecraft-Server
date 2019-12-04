@@ -1,14 +1,17 @@
 #!/bin/bash
 
+# Go to home directory for installation
 cd ~/
 
+# Set variables
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.3.2"
+BACKTITLE="Minecraft-Server-Installer v1.4"
 export NO_INSTALL=0
 export arg1=0
 
+# Parse opts
 while getopts "yh?:" opt; do
     case "$opt" in
     y)  arg1=1
@@ -22,10 +25,14 @@ while getopts "yh?:" opt; do
     esac
 done
 
+# Start installation sequence
 if [[ "$NO_INSTALL" == 0 ]]; then
+
+# Install all neccesary things
 sudo apt update
 sudo apt install -y dialog
 
+# Old files derection
 if [[ -d Minecraft-Server ]]; then
 if [[ "$arg1" == 0 ]]; then
 export NO_INSTALL=1
@@ -57,10 +64,18 @@ fi
 fi
 
 if [[ "$NO_INSTALL" == 0 ]]; then
+# Clone repo
 git clone https://github.com/AlexProgrammerDE/Minecraft-Server.git
+
+# Install man pages
+cp ./Minecraft-Server/mc-server.1 /usr/local/man/man8/mc-server.1
+gzip /usr/local/man/man8/mc-server.1
+
+# Add to .bashrc
 source ~/Minecraft-Server/start.sh
 echo "source ~/Minecraft-Server/start.sh" > ~/.bashrc
 fi
 fi
 
+# Display succes message
 echo "The installer has now finished. Please close this terminal and open a new to use your installation."
