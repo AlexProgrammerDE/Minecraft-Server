@@ -1,11 +1,9 @@
 #!/bin/bash
 
-rm install.sh
-
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.0"
+BACKTITLE="Minecraft-Server-Installer v1.1"
 
 export NO_INSTALL=0
 
