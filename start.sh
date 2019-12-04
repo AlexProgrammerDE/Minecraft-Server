@@ -3,10 +3,12 @@
 function mc-server {
 
 export arg1=0
+export SERVER_INSTALL_DISABLE=0
+export MANAGING_DISABLED=0
 
 while getopts ":h:" opt; do
   case $opt in
-    h) arg1=1
+    h) export arg1=1
     ;;
     \?) echo "Invalid option -$OPTARG" >&2
     ;;
@@ -14,6 +16,8 @@ while getopts ":h:" opt; do
 done
 
 if [[ "$arg1" == 1 ]]; then
+  export SERVER_INSTALL_DISABLE=0
+  export MANAGING_DISABLED=0
   echo "mc-server has at the moment no documentation. This feature will be added in a future release." 
 fi
 
@@ -27,6 +31,7 @@ BACKTITLE="Minecraft-Server"
 export SERVER_INSTALL_DISABLE=0
 
 if [[ -d serverfiles ]]; then
+if [[ "$MANAGING_DISABLED" == 9 ]]; then
   TITLE="Server detected."
   MENU="Do you want to edit the server?"
   OPTIONS=(1 "Manage the server."
@@ -106,10 +111,11 @@ if [[ -d serverfiles ]]; then
             ;;
   esac
 fi 
+fi
 
 clear 
 
-if [[ ! "$SERVER_INSTALL_DISABLE" == 1 ]]; then
+if [[ "$SERVER_INSTALL_DISABLE" == 0 ]]; then
 
 TITLE="Server Version"
 MENU="Choose one of the Minecraft Editions:"
