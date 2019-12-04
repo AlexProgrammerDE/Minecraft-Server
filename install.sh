@@ -7,7 +7,7 @@ cd ~/
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.4"
+BACKTITLE="Minecraft-Server-Installer v1.4.1"
 export NO_INSTALL=0
 export arg1=0
 
@@ -68,8 +68,8 @@ if [[ "$NO_INSTALL" == 0 ]]; then
 git clone https://github.com/AlexProgrammerDE/Minecraft-Server.git
 
 # Install man pages
-cp ./Minecraft-Server/mc-server.1 /usr/local/man/man8/mc-server.1
-gzip /usr/local/man/man8/mc-server.1
+sudo cp ./Minecraft-Server/mc-server.1 /usr/local/man/man8/mc-server.1
+sudo gzip /usr/local/man/man8/mc-server.1
 
 # Add to .bashrc
 source ~/Minecraft-Server/start.sh
