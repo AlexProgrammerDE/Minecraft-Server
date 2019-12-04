@@ -8,7 +8,7 @@ export MANAGING_DISABLED=0
 export SERVER_INSTALL_DISABLE=0
 export OPTIND=1
 
-while getopts "h:" opt; do
+while getopts "h?:" opt; do
   case $opt in
     h|\?) 
         export arg1=1
@@ -112,9 +112,8 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
             ;;
   esac
 fi 
-fi
-
 clear 
+fi
 
 if [[ "$SERVER_INSTALL_DISABLE" == 0 ]]; then
 
@@ -474,6 +473,7 @@ case $CHOICE in
             ;;
 esac
 fi
+
 if [[ "$MINECRAFTEDITION" == 4 ]]; then
 MENU="Choose one of the Minecraft Versions:"
 OPTIONS=(1 "1.14.4"
@@ -673,12 +673,11 @@ case $CHOICE in
             ;;
 esac
 fi
+clear
 fi
 
-clear
-
 if [[ "$SERVER_INSTALL_DISABLE" == 0 ]]; then
-echo "Your Server is now prepared. If you would like to start him you need to restart this script."
+  echo "Your Server is now prepared. If you would like to start him you need to restart this script."
 fi
 
 }
