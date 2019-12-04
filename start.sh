@@ -5,8 +5,9 @@ function mc-server {
 export arg1=0
 export SERVER_INSTALL_DISABLE=0
 export MANAGING_DISABLED=0
+export SERVER_INSTALL_DISABLE=0
 
-while getopts ":h:" opt; do
+while getopts "h:" opt; do
   case $opt in
     h) export arg1=1
     ;;
@@ -27,8 +28,6 @@ HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server"
-
-export SERVER_INSTALL_DISABLE=0
 
 if [[ -d serverfiles ]]; then
 if [[ "$MANAGING_DISABLED" == 0 ]]; then
