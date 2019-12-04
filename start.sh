@@ -6,19 +6,21 @@ export arg1=0
 export SERVER_INSTALL_DISABLE=0
 export MANAGING_DISABLED=0
 export SERVER_INSTALL_DISABLE=0
+export OPTIND=1
 
 while getopts "h:" opt; do
   case $opt in
-    h) export arg1=1
-    ;;
-    \?) echo "Invalid option -$OPTARG" >&2
-    ;;
+    h|\?) 
+        export arg1=1
+        ;;
   esac
 done
 
+shift $((OPTIND-1))
+
 if [[ "$arg1" == 1 ]]; then
-  export SERVER_INSTALL_DISABLE=0
-  export MANAGING_DISABLED=0
+  export SERVER_INSTALL_DISABLE=1
+  export MANAGING_DISABLED=1
   echo "mc-server has at the moment no documentation. This feature will be added in a future release." 
 fi
 
@@ -675,7 +677,7 @@ fi
 
 clear
 
-if [[ "$SERVER_INSTALL_DISABLE" == 1 ]]; then
+if [[ "$SERVER_INSTALL_DISABLE" == 0 ]]; then
 echo "Your Server is now prepared. If you would like to start him you need to restart this script."
 fi
 
