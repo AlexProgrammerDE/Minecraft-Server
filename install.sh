@@ -7,7 +7,7 @@ cd ~/
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.5"
+BACKTITLE="Minecraft-Server-Installer v1.5.1"
 export NO_INSTALL=0
 export arg1=0
 
@@ -73,8 +73,9 @@ sudo cp ./Minecraft-Server/mc-server.1 /usr/local/share/man/man1/
 sudo mandb
 
 # Add to .bashrc
-source ~/Minecraft-Server/mc-server
 echo "source ~/Minecraft-Server/mc-server" > ~/.bashrc
+alias brc='source ~/Minecraft-Server/mc-server'
+alias brc='source ~/.bashrc'
 exec bash
 fi
 fi
