@@ -226,6 +226,7 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
                   ;;
             esac
             done
+            fi
             ;;
         2)
             echo "You chose Option 2"
