@@ -101,6 +101,7 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
             export SERVER_INSTALL_DISABLE=1
             TITLE="Editing."
             MENU="What do you want to do?"
+            if [[ ! -a ./Minecraft-Server/spigot ]]; then
             OPTIONS=(1 "Run shell in the serverfiles."
                      2 "Start the server."
                      3 "Quit")
@@ -153,6 +154,74 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
               3)
                   # Quit
                   echo "You chose Option 3"
+                  export END=1
+                  ;;
+            esac
+            done
+            else
+            OPTIONS=(1 "Run shell in the serverfiles."
+                     2 "Start the server."
+                     3 "Install spigot plugins."
+                     4 "Quit")
+            while [ ! "$END" == 1 ]; do
+            CHOICE=$(dialog --clear \
+                            --backtitle "$BACKTITLE" \
+                            --title "$TITLE" \
+                            --menu "$MENU" \
+                            $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                            "${OPTIONS[@]}" \
+                            2>&1 >/dev/tty)
+            case $CHOICE in
+              1)
+                  # Spawn shell in serverfiles
+                  echo "You chose Option 1"
+                  clear
+                  DIRECTORY=$(pwd)
+                  cd serverfiles
+                  while [ ! "$COMMAND" == stop ]; do
+                  ls
+                  read -p "Type here your command: [stop] " COMMAND
+                  $COMMAND
+                  if [[ -z "$COMMAND" ]]; then
+                    export COMMAND=stop
+                  fi
+                  done
+                  export COMMAND=0
+                  cd $DIRECTORY
+                  ;;
+              2)
+                  # Manually start the vserver
+                  echo "You chose Option 2"
+                  clear
+                  DIRECTORY=$(pwd)
+                  cd serverfiles
+                  if [[ -a java ]]; then
+                    java -Xmx1024M -Xms1024M -jar server.jar nogui 
+                  fi
+                  if [[ -a spigot ]]; then
+                    java -Xmx1024M -Xms1024M -jar server.jar nogui 
+                  fi
+                  if [[ -a bedrock ]]; then
+                    ./bedrock_server 
+                  fi
+                  if [[ -a pocketmine ]]; then
+                    ./start.sh
+                  fi
+                  cd $DIRECTORY
+                  ;;
+              3)
+                  # Install plugins
+                  echo "You chose Option 3"
+                  DIRECTORY=$(pwd)
+                  cd serverfiles
+                  cd plugins
+                  read -q "Type here the url of your plugin. [*.jar]:" PLUGIN
+                  wget PLUGIN
+                  cd $DIRECTORY
+                  ;;
+              4)
+                  # Quit
+                  echo "You chose Option 4"
                   export END=1
                   ;;
             esac
