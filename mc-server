@@ -9,14 +9,13 @@ START_DIRECTORY=$(pwd)
 cd ~/Minecraft-Server/
 
 # Set Variables
-export VERSION=1.2.3
+export VERSION=1.3
 export arg1=0
 export arg2=0
 export arg3=0
 export SERVER_INSTALL_DISABLE=0
 export MANAGING_DISABLED=0
 export SERVER_INSTALL_DISABLE=0
-export OPTIND=1
 
 HEIGHT=12
 WIDTH=40
@@ -24,9 +23,6 @@ CHOICE_HEIGHT=4
 BACKTITLE="Minecraft-Server v$VERSION"
 
 # Parse arguments
-
-OPTIND=1
-
 while getopts "vh?:" opt; do
   case $opt in
     s)  export arg3=1
@@ -38,8 +34,6 @@ while getopts "vh?:" opt; do
         ;;
   esac
 done
-
-shift $((OPTIND-1))
 
 # -h
 if [[ "$arg1" == 1 ]]; then
@@ -101,7 +95,7 @@ if [[ "$MANAGING_DISABLED" == 0 ]]; then
             export SERVER_INSTALL_DISABLE=1
             TITLE="Editing."
             MENU="What do you want to do?"
-            if [[ ! -a ./Minecraft-Server/spigot ]]; then
+            if [[ ! -a ./plugins/spigot ]]; then
             OPTIONS=(1 "Run shell in the serverfiles."
                      2 "Start the server."
                      3 "Quit")
