@@ -7,7 +7,7 @@ cd ~/
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.4.2"
+BACKTITLE="Minecraft-Server-Installer v1.5"
 export NO_INSTALL=0
 export arg1=0
 
@@ -75,8 +75,9 @@ sudo mandb
 # Add to .bashrc
 source ~/Minecraft-Server/mc-server
 echo "source ~/Minecraft-Server/mc-server" > ~/.bashrc
+exec bash
 fi
 fi
 
 # Display succes message
-echo "The installer has now finished. Please close this terminal and open a new to use your installation."
+echo "The installer has now finished."
