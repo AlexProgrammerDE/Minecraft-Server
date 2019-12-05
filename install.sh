@@ -7,7 +7,7 @@ cd ~/
 HEIGHT=12
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Minecraft-Server-Installer v1.5.2"
+BACKTITLE="Minecraft-Server-Installer v1.5.3"
 export NO_INSTALL=0
 export arg1=0
 
@@ -30,11 +30,9 @@ if [[ "$NO_INSTALL" == 0 ]]; then
 
 # Install all neccesary things
 sudo apt update
-sudo add-apt-repository ppa:linuxuprising/java
 sudo apt install -y dialog \
                     default-jdk \
                     software-properties-common 
-sudo apt install -y oracle-java11-installer
 # Old files derection
 if [[ -d Minecraft-Server ]]; then
 if [[ "$arg1" == 0 ]]; then
