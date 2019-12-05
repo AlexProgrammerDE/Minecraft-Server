@@ -22,20 +22,16 @@ Feel free to make forks and to use them in PR's .
 
 ## Issues
 
-I am happy about every reported issue, it is no matter how small it is.
+I am happy about every reported issue, it is no matter how small it is. But please take first a look at the troubleshooting guide.
 
 ## To-Do
 
 - [x] Add main interface
 
 - [x] Add Vanilla Minecraft Java Edition
-
 - [x] Add Vanilla Minecraft Bedrock Edition
-
 - [ ] Add Forge Minecraft Java Edition
-
 - [x] Add Spigot Minecraft Java Edition
-
 - [x] Add Pocketmine Minecraft Pocket Edition (Using latest)
 
 - [x] PR templates
