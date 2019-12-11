@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Go to home directory for installation
-cd ~/
+cd ~/ || exit
 
 # Set variables
 HEIGHT=12
@@ -51,11 +51,12 @@ CHOICE=$(dialog --clear \
                   
 case $CHOICE in
       1)
+         echo "You chose Option 1"
          export NO_INSTALL=0
          sudo rm -r Minecraft-Server 2> /dev/null
          ;;
       2)
-         break
+         echo "You chose Option 2"
          ;;
 esac
 clear
