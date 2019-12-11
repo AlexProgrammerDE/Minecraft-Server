@@ -22,10 +22,11 @@ CHOICE=$(dialog --clear \
                 2>&1 >/dev/tty)
 case $CHOICE in
         1)
-            sudo rm -r *
+            echo "You chose option 1"
+            sudo rm -r ./*glob*
             ;;
         2)
-            break
+            echo "You chose option 1"
             ;;
 esac
 fi
