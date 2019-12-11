@@ -6,7 +6,7 @@ CHOICE_HEIGHT=2
 BACKTITLE="Minecraft-Server"
 
 mkdir serverfiles
-cd serverfiles
+cd serverfiles || exit
 
 if [ -a server.jar ]; then
 TITLE="Old Files"
@@ -23,10 +23,11 @@ CHOICE=$(dialog --clear \
                 2>&1 >/dev/tty)
 case $CHOICE in
         1)
-            sudo rm -rf `ls -Ab`
+            echo "You chose option 1"
+            sudo rm -rf $(ls -Ab)
             ;;
         2)
-            break
+            echo "You chose option 2"
             ;;
 esac
 fi
@@ -56,6 +57,7 @@ CHOICE=$(dialog --clear \
 
 case $CHOICE in
         1)
+            echo "You chose option 1"
             if [[ $arg1 == 1.14.4 ]]; then
               wget -O server.jar https://launcher.mojang.com/v1/objects/3dc3d84a581f14691199cf6831b71ed1296a9fdf/server.jar
               java -Xmx1024M -Xms1024M -jar server.jar nogui &
@@ -1247,7 +1249,8 @@ case $CHOICE in
             clear            
             ;;
         2)
-            break
+            echo "You chose option 2"
+            exit
             ;;
 esac
 
