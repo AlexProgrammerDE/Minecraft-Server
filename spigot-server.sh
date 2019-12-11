@@ -8,7 +8,7 @@ OPTIONS=(1 "Yes"
          2 "No")
          
 mkdir serverfiles
-cd serverfiles
+cd serverfiles || exit
 
 if [ -a server.jar ]; then
 TITLE="Old Files"
@@ -22,7 +22,7 @@ CHOICE=$(dialog --clear \
                 2>&1 >/dev/tty)
 case $CHOICE in
         1)
-            sudo rm -rf `ls -Ab`
+            sudo rm -r *
             ;;
         2)
             break
