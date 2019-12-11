@@ -6,7 +6,7 @@ CHOICE_HEIGHT=2
 BACKTITLE="Minecraft-Server"
 
 mkdir serverfiles
-cd serverfiles                
+cd serverfiles || exit             
 
 TITLE="Agreement"
 MENU="When you chose yes you agree to the Minecraft End User License Agreement: https://minecraft.net/terms and Privacy Policy: https://go.microsoft.com/fwlink/?LinkId=521839"
