@@ -6,7 +6,7 @@ CHOICE_HEIGHT=2
 BACKTITLE="Minecraft-Server"
 
 mkdir serverfiles
-cd serverfiles
+cd serverfiles || exit
 
 if [ -a PocketMine-MP.phar ]; then
 TITLE="Old Files"
@@ -23,7 +23,7 @@ CHOICE=$(dialog --clear \
                 2>&1 >/dev/tty)
 case $CHOICE in
         1)
-            sudo rm -rf `ls -Ab`
+            sudo rm -rf $(ls -Ab)
             ;;
         2)
             break
