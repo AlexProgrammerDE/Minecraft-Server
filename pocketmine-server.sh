@@ -24,7 +24,7 @@ CHOICE=$(dialog --clear \
 case $CHOICE in
         1)
             echo "You chose option 1"
-            sudo rm -rf $(ls -Ab)
+            sudo rm -r ./*glob*
             ;;
         2)
             echo "You chose option 2"
